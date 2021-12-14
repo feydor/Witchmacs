@@ -36,7 +36,7 @@
        (interactive)
        (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
                  '(2 "_NET_WM_STATE_FULLSCREEN" 0)))
-(fullscreen)
+;(fullscreen)
 
 (global-prettify-symbols-mode t)
 
@@ -91,8 +91,8 @@
   :config
   (dashboard-setup-startup-hook)
   (setq dashboard-items '((recents . 5)))
-  (setq dashboard-banner-logo-title "W I T C H M A C S - The cutest Emacs distribution!")
-  (setq dashboard-startup-banner "~/.emacs.d/marivector.png")
+  (setq dashboard-banner-logo-title "S C A R L E T - W I T C H M A C S")
+  (setq dashboard-startup-banner "~/.emacs.d/flanvector.png")
   (setq dashboard-center-content t)
   (setq dashboard-show-shortcuts nil)
   (setq dashboard-set-init-info t)
@@ -105,18 +105,18 @@
           ((,nil
             "Witchmacs on github"
             "Open Witchmacs' github page on your browser"
-            (lambda (&rest _) (browse-url "https://github.com/snackon/witchmacs"))
+            (lambda (&rest _) (browse-url "https://github.com/feydor/witchmacs"))
             'default)
            (nil
             "Witchmacs crash course"
             "Open Witchmacs' introduction to Emacs"
             (lambda (&rest _) (find-file "~/.emacs.d/Witcheat.org"))
             'default)
-           (nil
-            "Update Witchmacs"
-            "Get the latest Witchmacs update. Check out the github commits for changes!"
-            (lambda (&rest _) (update-config))
-            'default)
+           ;(nil
+           ; "Update Witchmacs"
+           ; "Get the latest Witchmacs update. Check out the github commits for changes!"
+           ; (lambda (&rest _) (update-config))
+           ; 'default)
            )
           ;; line 2
           ((,nil
@@ -125,9 +125,9 @@
             (lambda (&rest _) (create-scratch-buffer))
             'default)
            (nil
-            "Open config.org"
+            "Open config.el"
             "Open Witchmacs' configuration file for easy editing"
-            (lambda (&rest _) (find-file "~/.emacs.d/config.org"))
+            (lambda (&rest _) (find-file "~/.emacs.d/config.el"))
             'default)))))
             
 ;; creating a new window switches your cursor to it
