@@ -22,7 +22,7 @@
 (setq-default standard-indent 4)
 (setq c-basic-offset tab-width)
 (setq-default electric-indent-inhibit t)
-(setq-default indent-tabs-mode t)
+(setq-default indent-tabs-mode f)
 (setq backward-delete-char-untabify-method 'nil)
 
 ; utf8 everywhere
